@@ -1,9 +1,8 @@
 # 100_days_of_rtl_design
 
 RTL DESIGN USING SYSTEMVERILOG 
-DAY - 1 
 
-| Problem                                       | Eda link
+| DAY 1                                     | Eda link
 | ----------------------------------------------|:-----------------------------------|
 | Binary to gray code conversion                |https://www.edaplayground.com/x/B2Gg|
 | Design of Clock divider                |https://www.edaplayground.com/x/9whv|
