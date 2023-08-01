@@ -8,3 +8,10 @@ RTL DESIGN USING SYSTEMVERILOG
 | Design of Clock divider                |https://www.edaplayground.com/x/9whv|
 | Design of Half adder | https://www.edaplayground.com/x/M_qC |
 | Design of Mux2to1 | https://www.edaplayground.com/x/M_q2 |
+
+
+| DAY 2                                   | Eda link
+| ----------------------------------------------|:-----------------------------------|
+| Simple ALU               |https://www.edaplayground.com/x/wWXE|
+| Design of d flip flop                |https://www.edaplayground.com/x/emvD|
+| Design of edge detector | https://www.edaplayground.com/x/CEFG |
