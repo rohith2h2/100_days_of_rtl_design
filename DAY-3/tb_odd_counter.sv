@@ -24,12 +24,10 @@ module tb;
     reset <= 1'b0;
     for (int i=0;i<128;i++) begin
       @(posedge clk);
+      $display("At time = %0dns | reset = %0b | counter_out = %0b", $time, reset, counter_out);
     end
     $finish();
   end
-  
-  always begin
-    $display("At time = %0dns | reset = %0b | counter_out = %0b", $time, reset, counter_out);
-  end
+
   
 endmodule
