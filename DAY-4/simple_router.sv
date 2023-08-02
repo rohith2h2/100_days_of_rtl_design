@@ -17,18 +17,18 @@ dout3 - Output 3. Corresponds to addr = b11.
 module simple_router #(parameter WIDTH = 32) (
   input logic [WIDTH-1:0] din,
   input logic din_en,
-  input logic [2:0] addr,
+  input logic [1:0] addr,
+  output logic [WIDTH-1:0] dout0,
   output logic [WIDTH-1:0] dout1,
   output logic [WIDTH-1:0] dout2,
-  output logic [WIDTH-1:0] dout3,
-  output logic [WIDTH-1:0] dout4
+  output logic [WIDTH-1:0] dout3
 );
   always_comb begin
     if(din_en) begin //checks for din_en is high, then w.r.t addr given din is forwarded to that ouput
-      assign d0 = (addr == 1) ? din : 0;
-      assign d1 = (addr == 2) ? din : 0;
-      assign d2 = (addr == 3) ? din : 0;
-      assign d3 = (addr == 4) ? din : 0;
+      assign dout0 = (addr == 0) ? din : 0;
+      assign dout1 = (addr == 1) ? din : 0;
+      assign dout2 = (addr == 2) ? din : 0;
+      assign dout3 = (addr == 3) ? din : 0;
     end
     else begin //when din_en is low, assign 0 to all dout variable
       dout0 = 0;
